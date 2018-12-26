@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var num = parseInt(prompt("Nhập vào số nguyên tố :"));
+    var count = 0;
+    var n = 2;
+
+    function isPrime(n) {
+        var check = true;
+        for (var i = 2; i < n;i++){
+            if (n % i ===0){
+                check = false;
+                break;
+            }
+        } return check;
+    }
+        while (count < num){
+        if (isPrime(n)){
+            document.write(n + ' la so nguyen to' + '</br>');
+            count++
+        } n++
+        }
+</script>
+</body>
+</html>
